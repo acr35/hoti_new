@@ -8,78 +8,65 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <title>How the INTERNET Works</title>
     <style>
+        {
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #e2cbc6;
+            margin: 0;
+            padding: 0;
+        }
+
         .navbar {
             background-color: transparent !important;
             font-family: Optima New, sans-serif;
             color: #111224;
-        }
-
-        .navbar {
             float: right;
-            font-family: Optima New, sans-serif;
         }
         .navbar li a{
             color: #30475E !important; ;
             opacity: 60%;
         }
-
-        .footer-content{
-            font-family: Courier New, sans-serif;
-            color: #111224;
-            text-align: center;
-            padding-bottom: 20px;
-            padding-top: 10px;
+        .title{
+            color: #30475E;
+            font-family: Optima New, sans-serif;
+            margin-left: 20px;
         }
-        .footer{
-            background: #424A5D;
-
-        }
-
         .carousel-item{
             height: 65vh;
             opacity: 80%;
         }
         .carousel-inner, .item > img {
-            width:1200px;
+            width:1000px;
             height:700px;
-            margin-top: 100px;
-
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        .carousel-control-prev{
+            margin-top: 150px;
+            padding-right: 90px;
+            padding-top: 40px;
         }
 
-
-        .grid-item4{
-            font-family: Courier New, sans-serif;
-            background-color: transparent !important;
-        }
         .btn-info{
             background-color: transparent;
             border-color: black;
-            color: black;
+            color: #30475E;
             margin-top: 150px;
             margin-left: 20px;
         }
         .btn-info:hover{
             background-color: #424A5D;
             color: slategray;
-            border-color: black;
-
+            border-color: #30475E;
         }
-        .grid-container4{
-            display: grid;
-
+        .column{
+            float: left;
         }
-        .carousel-control-prev{
-            margin-top: 150px;
-            padding-right: 90px;
 
 
-        }
-        .carousel-control-next{
-            margin-right: 100px;
-            padding-top: 155px;
 
 
-        }
 
 
 
@@ -103,14 +90,14 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">HOME<span class="sr-only"></span></a>
+                        <a class="nav-link" href="index.html"><b>HOME</b><span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="docs/about.html">ABOUT<span class="sr-only"></span></a>
+                        <a class="nav-link" href="docs/about.html"><b>ABOUT</b><span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkk" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            HISTORY OF THE INTERNET
+                            <b>HISTORY OF THE INTERNET</b>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="docs/browserwars.html">Browser Wars</a>
@@ -126,66 +113,87 @@
 </div>
 
 
-<div class="grid-container4">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
+<div class="title">
+    <h1>How the</h1>
+    <h1><b>INTERNET</b> Works</h1>
 
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img class="d-block w-100" src="https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
-                <h1><b>ONLINE MARKETING & DATA PRIVACY</b></h1>
+</div>
+<div class="row">
+    <div class="column">
+        <div class="grid-container4">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://images.unsplash.com/photo-1473163928189-364b2c4e1135?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1><b>INVENTION OF THE INTERNET</b></h1>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1><b>BROWSER WARS</b></h1>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://images.unsplash.com/photo-1599016012665-13b74bb3b528?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2693&q=80" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1><b>INTERNET SEARCH</b></h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://specials-images.forbesimg.com/imageserve/5f469ea85cc82fc8d6083f05/960x0.jpg?fit=scale" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1><b>DOT COM BUBBLE</b></h1>
+
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </a>
+
             </div>
         </div>
-
-        <div class="carousel-item">
-            <img class="d-block w-100" src="https://images.unsplash.com/photo-1483389127117-b6a2102724ae?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80" alt="Second slide">
-            <div class="carousel-caption d-none d-md-block">
-                <h1><b>TRACKING YOUR PRIVACY</b></h1>
+        <div class="column">
+            <div class="information">
+                <a href="docs/inventionoftheinternet.html" class="btn btn-info" role="button">Start Learning</a>
+            </div>
+            <div class="information1">
+                <a href="docs/about.html" class="btn btn-info" role="button">About</a>
+            </div>
+            <div class="information2">
+                <h2>
+                    The internet is a global collection of network and its history reaches all the way back to 1950s. In this website, we have researched the history of the internet. Click through pages and enjoy!</h2>
             </div>
         </div>
-
-        <div class="carousel-item">
-            <img class="d-block w-100" src="https://images.unsplash.com/photo-1562813733-b31f71025d54?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1949&q=80" alt="Third slide">
-            <div class="carousel-caption d-none d-md-block">
-                <h1><b>BECOMING ANONYMOUS</b></h1>
-            </div>
-        </div>
-
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only"></span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only"></span>
-    </a>
-</div>
-    <div class="grid-item4">
-        <a href="docs/inventionoftheinternet.html" class="btn btn-info" role="button">Start Learning</a>
-    </div>
-    <div class="grid-item5">
-        <a href="docs/about.html" class="btn btn-info" role="button">About</a>
-    </div>
-    <div class="grid-item3">
-        <h2>
-            The internet is a global collection of network and its history reaches all the way back to 1950s. In this website, we have researched the history of the internet. Click through pages and enjoy!</h2>
     </div>
 </div>
 
 
 
 
-<div class="footer">
-    <div class="footer-content">
-        <h2>Turkmen & Ranpura</h2>
-    </div>
-</div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
