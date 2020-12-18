@@ -47,23 +47,49 @@
             padding-right: 90px;
             padding-top: 40px;
         }
-
+        .carousel-control-next{
+            margin-right: 270px;
+            padding-right: 50px;
+            padding-top: 300px;
+            padding-bottom: 150px;
+            margin-top: 40px;
+        }
         .btn-info{
             background-color: transparent;
             border-color: black;
             color: #30475E;
-            margin-top: 150px;
-            margin-left: 20px;
+            margin-top: 20px;
+            margin-left: 150px;
+
         }
+
         .btn-info:hover{
             background-color: #424A5D;
             color: slategray;
             border-color: #30475E;
         }
-        .column{
-            float: left;
-        }
+        .grid-container{
+            display: grid;
+            grid-row-gap: 30px;
+            grid-template-columns: auto auto auto;
+            margin-top: 5px;
+            padding-left: 0;
+            grid-column-gap: 50px;
+            font-family: Courier New, sans-serif;
+            color: #111224;
 
+        }
+        .information{
+            color: #30475E;
+            padding-top: 50px;
+            margin-top: 200px;
+        }
+        .information2{
+            margin-left: 45px;
+        }
+        .btn{
+            padding: 10px;
+        }
 
 
 
@@ -118,9 +144,9 @@
     <h1><b>INTERNET</b> Works</h1>
 
 </div>
-<div class="row">
-    <div class="column">
-        <div class="grid-container4">
+
+<div class="grid-container">
+        <div class="grid-item1">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
 
@@ -165,19 +191,18 @@
 
             </div>
         </div>
-        <div class="column">
+        <div class="grid-item2">
             <div class="information">
-                <a href="docs/inventionoftheinternet.html" class="btn btn-info" role="button">Start Learning</a>
+                <h5>
+                    The internet is a global collection of network and its history reaches all the way back to 1950s. In this website, we have researched the history of the internet. Click through pages and enjoy!</h5>
             </div>
             <div class="information1">
-                <a href="docs/about.html" class="btn btn-info" role="button">About</a>
+                <a href="docs/inventionoftheinternet.html" class="btn btn-info" role="button">Start Learning</a>
             </div>
             <div class="information2">
-                <h2>
-                    The internet is a global collection of network and its history reaches all the way back to 1950s. In this website, we have researched the history of the internet. Click through pages and enjoy!</h2>
+                <a href="docs/about.html" class="btn btn-info" role="button">About</a>
             </div>
         </div>
-    </div>
 </div>
 
 
