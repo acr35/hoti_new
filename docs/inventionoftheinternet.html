@@ -7,13 +7,444 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.css">
     <title>Invention of the Internet</title>
+    <style>
+        body{
+            background-color: #D8D3CD;
+        }
+        .navbar-nav > li > .dropdown-menu { background-color: #D8D3CD; }
+       .navbar-brand{
+           color: #30475E;
+       }
+        .navbar {
+            background-color: transparent  !important;
+            font-family: "Iowan Old Style" , sans-serif;
+            color: #30475E;
+            float: right;
+        }
+        .navbar li a{
+            color: #30475E !important;
+            float: right;
+        }
+        .jumbotron {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1473163928189-364b2c4e1135?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+            height: 35vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        body{margin-top:20px;
+            background:#D8D3CD;
+        }
+        .timeline {
+            position: relative;
+            padding: 10px;
+            margin: 0 auto;
+            overflow: hidden;
+            color: #D8D3CD;
+        }
+
+        .timeline:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -1px;
+            border-right: 2px dashed #c4d2e2;
+            height: 100%;
+            display: block;
+        }
+
+        .timeline-row {
+            padding-left: 50%;
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-row .timeline-time {
+            position: absolute;
+            right: 50%;
+            top: 31px;
+            text-align: right;
+            margin-right: 20px;
+            color: #30475E;
+            font-size: 1.5rem;
+        }
+
+        .timeline-row .timeline-time small {
+            display: block;
+            font-size: .8rem;
+            color: #8796af;
+        }
+
+        .timeline-row .timeline-content {
+            position: relative;
+            padding: 20px 30px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        .timeline-row .timeline-content:after {
+            content: "";
+            position: absolute;
+            top: 20px;
+            height: 3px;
+            width: 40px;
+        }
+
+        .timeline-row .timeline-content:before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            right: -50px;
+            width: 20px;
+            height: 20px;
+            -webkit-border-radius: 100px;
+            -moz-border-radius: 100px;
+            border-radius: 100px;
+            z-index: 100;
+            background: #ffffff;
+            border: 2px dashed #c4d2e2;
+        }
+
+        .timeline-row .timeline-content h4 {
+            margin: 0 0 20px 0;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            line-height: 150%;
+        }
+
+        .timeline-row .timeline-content p {
+            margin-bottom: 30px;
+            line-height: 150%;
+        }
+
+        .timeline-row .timeline-content i {
+            font-size: 2rem;
+            color: #ffffff;
+            line-height: 100%;
+            padding: 10px;
+            border: 2px solid #ffffff;
+            -webkit-border-radius: 100px;
+            -moz-border-radius: 100px;
+            border-radius: 100px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .timeline-row .timeline-content .thumbs {
+            margin-bottom: 20px;
+        }
+
+        .timeline-row .timeline-content .thumbs img {
+            margin-bottom: 10px;
+        }
+
+        .timeline-row:nth-child(even) .timeline-content {
+            background-color: #ff5000;
+            /* Fallback Color */
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#fc6d4c), to(#ff5000));
+            /* Saf4+, Chrome */
+            background-image: -webkit-linear-gradient(top, #fc6d4c, #ff5000);
+            /* Chrome 10+, Saf5.1+, iOS 5+ */
+            background-image: -moz-linear-gradient(top, #fc6d4c, #ff5000);
+            /* FF3.6 */
+            background-image: -ms-linear-gradient(top, #fc6d4c, #ff5000);
+            /* IE10 */
+            background-image: -o-linear-gradient(top, #fc6d4c, #ff5000);
+            /* Opera 11.10+ */
+            background-image: linear-gradient(top, #fc6d4c, #ff5000);
+            margin-left: 40px;
+            text-align: left;
+        }
+
+        .timeline-row:nth-child(even) .timeline-content:after {
+            left: -39px;
+            border-right: 18px solid #ff5000;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+        }
+
+        .timeline-row:nth-child(even) .timeline-content:before {
+            left: -50px;
+            right: initial;
+        }
+
+        .timeline-row:nth-child(odd) {
+            padding-left: 0;
+            padding-right: 50%;
+        }
+
+        .timeline-row:nth-child(odd) .timeline-time {
+            right: auto;
+            left: 50%;
+            text-align: left;
+            margin-right: 0;
+            margin-left: 20px;
+        }
+
+        .timeline-row:nth-child(odd) .timeline-content {
+            background-color: #5a99ee;
+            /* Fallback Color */
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#1379bb), to(#5a99ee));
+            /* Saf4+, Chrome */
+            background-image: -webkit-linear-gradient(top, #1379bb, #5a99ee);
+            /* Chrome 10+, Saf5.1+, iOS 5+ */
+            background-image: -moz-linear-gradient(top, #1379bb, #5a99ee);
+            /* FF3.6 */
+            background-image: -ms-linear-gradient(top, #1379bb, #5a99ee);
+            /* IE10 */
+            background-image: -o-linear-gradient(top, #1379bb, #5a99ee);
+            /* Opera 11.10+ */
+            background-image: linear-gradient(top, #1379bb, #5a99ee);
+            margin-right: 40px;
+            margin-left: 0;
+            text-align: right;
+        }
+
+        .timeline-row:nth-child(odd) .timeline-content:after {
+            right: -39px;
+            border-left: 18px solid #1379bb;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+        }
+
+        @media (max-width: 767px) {
+            .timeline {
+                padding: 15px 10px;
+            }
+            .timeline:after {
+                left: 28px;
+            }
+            .timeline .timeline-row {
+                padding-left: 0;
+                margin-bottom: 16px;
+            }
+            .timeline .timeline-row .timeline-time {
+                position: relative;
+                right: auto;
+                top: 0;
+                text-align: left;
+                margin: 0 0 6px 56px;
+            }
+            .timeline .timeline-row .timeline-time strong {
+                display: inline-block;
+                margin-right: 10px;
+            }
+            .timeline .timeline-row .timeline-icon {
+                top: 52px;
+                left: -2px;
+                margin-left: 0;
+            }
+            .timeline .timeline-row .timeline-content {
+                padding: 15px;
+                margin-left: 56px;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+                position: relative;
+            }
+            .timeline .timeline-row .timeline-content:after {
+                right: auto;
+                left: -39px;
+                top: 32px;
+            }
+            .timeline .timeline-row:nth-child(odd) {
+                padding-right: 0;
+            }
+            .timeline .timeline-row:nth-child(odd) .timeline-time {
+                position: relative;
+                right: auto;
+                left: auto;
+                top: 0;
+                text-align: left;
+                margin: 0 0 6px 56px;
+            }
+            .timeline .timeline-row:nth-child(odd) .timeline-content {
+                margin-right: 0;
+                margin-left: 55px;
+            }
+            .timeline .timeline-row:nth-child(odd) .timeline-content:after {
+                right: auto;
+                left: -39px;
+                top: 32px;
+                border-right: 18px solid #5a99ee;
+                border-left: inherit;
+            }
+            .timeline.animated .timeline-row:nth-child(odd) .timeline-content {
+                left: 20px;
+            }
+            .timeline.animated .timeline-row.active:nth-child(odd) .timeline-content {
+                left: 0;
+            }
+        }
+
+    </style>
 </head>
 <body>
-<h1>Hello Testing</h1>
+
 <!-- JQuery, Popper.js, Bootstrap JS (Keep this at the end of the body)-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
+
+<!-- Adding Navbar -->
+<div class="container-fluid">
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <h3>ILAYDA & ABHISHEK</h3>
+        </a>
+    </nav>
+    <div class ="row no-gutters">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html"><b>HOME</b><span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html"><b>ABOUT</b><span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkk" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <b>HISTORY OF THE INTERNET</b>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="browserwars.html">Browser Wars</a>
+                            <a class="dropdown-item" href="dotcombubble.html">Dot Com Bubble</a>
+                            <a class="dropdown-item" href="internetsearch.html">Internet Search</a>
+                            <a class="dropdown-item" href="people.html">People</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
 </body>
+
+<div class="jumbotron">
+</div>
+
+
+<div class="container bootdey">
+    <div class="row gutters">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="card">
+                <div class="card-body">
+                    <!-- Timeline start -->
+                    <div class="timeline">
+                        <div class="timeline-row">
+                            <div class="timeline-time">
+                                1950's
+                            </div>
+                            <div class="timeline-dot fb-bg"></div>
+                            <div class="timeline-content">
+                                <p>The internet generated 300 and 1 billion dollars in business and was responsible for the one third of US economic. The seminal idea behind the internet was envisioned by a psychologist named J.C.R. Licklider, a professor at MIT in 1950s. At the time, terminals would be connected to a very large server and users would all access the data at the same time. His idea was that the computers would allow you to communicate better and that would allow you to better connect all the computers together so they might be more useful in sharing information among people. The first computers were enormously large and expensive devices that were never intended to communicate.</p><div class="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-row">
+                            <div class="timeline-time">
+                                1966's
+                            </div>
+                            <div class="timeline-dot green-one-bg"></div>
+                            <div class="timeline-content green-one">
+                                <p>
+                                    At MIT, a graduate student named Leonard Kleinrock begin applying Queuing Theory. It’s a great tool for evaluating computer in communication systems. In 1966, Robert Taylor of (ARPA), The Advanced Research Projects Agency, needed a separate terminal to log into each of several time shared computers at research centers across the country. Taylor had to move from terminal to terminal to work on a different computer. Taylor wanted to create a network because it was difficult to have 3 terminals to take 3 different machines instead in 1 terminal he could talk to all.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-row">
+                            <div class="timeline-time">
+                                1966's
+                            </div>
+                            <div class="timeline-dot green-two-bg"></div>
+                            <div class="timeline-content green-two">
+                                <p>A creation of network which would link hetero genius computers to each other through this network. This invention would save money, time, and resources and tie each time shared computer to one of them in 1968. Roberts sought out the engineers to build the a advanced research projects agency computer network, the ARPA NET. It was going to be based on special mini computers called Interface Message Processor and packet switching.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-row">
+                            <div class="timeline-time">
+                                3:55 PM<small>Apr 26</small>
+                            </div>
+                            <div class="timeline-dot green-three-bg"></div>
+                            <div class="timeline-content green-three">
+                                <i class="icon-directions"></i>
+                                <h4>Milestone Admin</h4>
+                                <p>
+                                    Admin theme includes graphs, invoice, timeline, widgets, projects, calendar, components, layouts, todo's.
+                                </p>
+                                <div>
+                                    <span class="badge badge-light">Profile</span>
+                                    <span class="badge badge-light">Dashboard</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-row">
+                            <div class="timeline-time">
+                                5:24 PM<small>Apr 12</small>
+                            </div>
+                            <div class="timeline-dot green-four-bg"></div>
+                            <div class="timeline-content green-four">
+                                <i class="fa fa-user"></i>
+                                <h4>Milestone Dashboard</h4>
+                                <p class="no-margin">Milestone Admin Dashboard includes invoice, profile, tasks, gallery, projects, maintanence.</p>
+                                <div>
+                                    <span class="badge badge-light">Analytics</span>
+                                    <span class="badge badge-light">Graphs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-row">
+                            <div class="timeline-time">
+                                11:25 AM<small>Apr 19</small>
+                            </div>
+                            <div class="timeline-dot teal-bg"></div>
+                            <div class="timeline-content teal">
+                                <i class="fa fa-coffee"></i>
+                                <h4>Milestone Template</h4>
+                                <p class="no-margin">Panels, alerts, notifications, new input styles, pricing plans, project plan, signup, login and register.</p>
+                                <div>
+                                    <span class="badge badge-light">Labels</span>
+                                    <span class="badge badge-light">Filters</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-row">
+                            <div class="timeline-time">
+                                12:30 PM<small>May 25</small>
+                            </div>
+                            <div class="timeline-dot sea-green-bg"></div>
+                            <div class="timeline-content sea-green">
+                                <i class="fa fa-image"></i>
+                                <h4>Milestone dashboard</h4>
+                                <p>Milestone Admin Dashboard contains Ion slider, heatmap, alerts, breadcrumbs, alerts, pricing, signup, login and register.</p>
+                                <div>
+                                    <span class="badge badge-light">BS 4</span>
+                                    <span class="badge badge-light">Sass</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Timeline end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
