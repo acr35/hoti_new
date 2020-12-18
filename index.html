@@ -17,15 +17,17 @@
             padding: 0;
         }
 
+
         .navbar {
-            background-color: transparent !important;
+            background-color: transparent  !important;
             font-family: Optima New, sans-serif;
-            color: #111224;
+            color: black;
             float: right;
         }
         .navbar li a{
-            color: #30475E !important; ;
-            opacity: 60%;
+            color: #30475E !important;
+            float: right;
+
         }
         .title{
             color: #30475E;
@@ -40,33 +42,45 @@
             width:1000px;
             height:700px;
             margin-top: 20px;
-            border-radius: 10px;
+
         }
         .carousel-control-prev{
             margin-top: 150px;
             padding-right: 90px;
             padding-top: 40px;
+
         }
         .carousel-control-next{
-            margin-right: 270px;
-            padding-right: 50px;
             padding-top: 300px;
             padding-bottom: 150px;
-            margin-top: 40px;
+            margin-top: 20px;
+            padding-left: 90px;
         }
+        .carousel-indicators{
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        .carousel-caption{
+            color: whitesmoke;
+            font-family: Optima New, sans-serif;
+        }
+
         .btn-info{
             background-color: transparent;
-            border-color: black;
+            border-color: #30475E;
             color: #30475E;
             margin-top: 20px;
             margin-left: 150px;
+            border-width: 3px;
 
         }
-
         .btn-info:hover{
             background-color: #424A5D;
             color: slategray;
             border-color: #30475E;
+        }
+        .btn{
+            padding: 15px;
         }
         .grid-container{
             display: grid;
@@ -75,7 +89,7 @@
             margin-top: 5px;
             padding-left: 0;
             grid-column-gap: 50px;
-            font-family: Courier New, sans-serif;
+            font-family: Optima New, sans-serif;
             color: #111224;
 
         }
@@ -83,13 +97,15 @@
             color: #30475E;
             padding-top: 50px;
             margin-top: 200px;
+            font-family: Optima New, sans-serif;
+            line-height: 32px;
         }
         .information2{
-            margin-left: 45px;
+            margin-left: 30px;
+            width: 150px;
         }
-        .btn{
-            padding: 10px;
-        }
+
+
 
 
 
@@ -171,16 +187,21 @@
                     </div>
 
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="https://images.unsplash.com/photo-1599016012665-13b74bb3b528?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2693&q=80" alt="Third slide">
+                        <img class="d-block w-100" src="https://images.unsplash.com/photo-1594663653925-365bcbf7ef86?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80" alt="Third slide">
                         <div class="carousel-caption d-none d-md-block">
                             <h1><b>INTERNET SEARCH</b></h1>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="https://specials-images.forbesimg.com/imageserve/5f469ea85cc82fc8d6083f05/960x0.jpg?fit=scale" alt="Third slide">
+                        <img class="d-block w-100" src="https://images.unsplash.com/photo-1556382363-8967ad2b37f0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Third slide">
                         <div class="carousel-caption d-none d-md-block">
                             <h1><b>DOT COM BUBBLE</b></h1>
-
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://images.unsplash.com/photo-1460794418188-1bb7dba2720d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1><b>PEOPLE</b></h1>
                         </div>
                     </div>
                 </div>
@@ -188,13 +209,16 @@
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only"></span>
                 </a>
-
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </a>
             </div>
         </div>
         <div class="grid-item2">
             <div class="information">
                 <h5>
-                    The internet is a global collection of network and its history reaches all the way back to 1950s. In this website, we have researched the history of the internet. Click through pages and enjoy!</h5>
+                    The internet is a global collection of network and its history reaches all the way back to 1950s. In this website, we have researched the history of the internet and how it took over the world, browser wars, Yahoo, Google, Amazon, and Ebay. Click through pages or the buttons and enjoy!</h5>
             </div>
             <div class="information1">
                 <a href="docs/inventionoftheinternet.html" class="btn btn-info" role="button">Start Learning</a>
