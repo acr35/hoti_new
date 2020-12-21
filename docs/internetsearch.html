@@ -6,27 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- Fonts -->
+    <script src="https://kit.fontawesome.com/caa5457cb2.js" crossorigin="anonymous"></script>
     <title>Internet Search</title>
     <style>
         body{
             background-color: #D8D3CD;
         }
+        .navbar-light .navbar-brand{
+            color: #30475E;
+            font-family: "Iowan Old Style" , sans-serif;
+            margin-top: 20px;
+
+        }
 
         .navbar-nav > li > .dropdown-menu { background-color: #D8D3CD;
         }
-    .navbar-brand{
-        color: #30475E;
-    }
-    .navbar {
+
+        .navbar {
         background-color: transparent  !important;
         font-family: "Iowan Old Style" , sans-serif;
         color: #30475E;
         float: right;
     }
+
     .navbar li a{
         color: #30475E !important;
         float: right;
     }
+
+
+        .row:after {
+            display: table;
+        }
+
+
+
     .jumbotron {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1594663653925-365bcbf7ef86?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80");
         height: 35vh;
@@ -45,7 +60,21 @@
         padding-right: 50px;
         margin: 30px 370px 30px 350px;
 
+    }
+    .title{
+        font-family: "Iowan Old Style" , sans-serif;
+        color: #30475E;
+        text-align: center;
+        margin-top: 30px;
 
+    }
+
+        .row:after {
+            display: table;
+            align-items: center;
+        }
+    .text6{
+        margin-bottom: 70px;
     }
     .text1, .text2, .text5, .text6{
         font-family: "Iowan Old Style" , sans-serif;
@@ -56,34 +85,58 @@
         padding-right: 100px;
         margin-top: 20px;
     }
-        .grid-container2{
-            display: grid;
+        footer{
+            margin-top: 50px;
+        }
+        .p-4{
+            color: #30475E;
+        }
+        .bg-dark{
+            background-color: #CDC9C4 !important;
+        }
+
+
+        ::-webkit-scrollbar {
+            width: 20px;
+        }
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #B9B4AF;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D8D3CD;
+        }
+        .info2 {
+            color: #30475E;
+            font-family: "Iowan Old Style", sans-serif;
+            margin-left: 350px;
+            margin-right: 350px;
+        }
+        .grid-container{
+            grid-row-gap: 50px;
             grid-template-columns: auto auto auto;
-            margin-top: 100px;
-            padding-top: 40px;
-            padding-bottom: 10px;
-            padding-left: 100px;
+            margin-top: 30px;
+            display: grid;
+            grid-column-gap: 30px;
             font-family: "Iowan Old Style", sans-serif;
             color: #30475E;
-            background-color: #CDC9C4;
         }
-        .footer-content1{
-            padding-left: 70px;
-            margin-left: 90px;
-            padding-top: 50px;
+        .grid-item{
+            margin-left: 350px;
         }
-        .text3{
-            padding-left: 100px;
-            padding-bottom: 70px;
-            margin-bottom: 30px;
+        .row1{
+            margin-right: 350px;
         }
-        .text4{
-            padding-right: 0;
-            margin-right: 0;
-            margin-left: 70px;
-            padding-bottom: 70px;
-            margin-bottom: 30px;
+        .footer-img{
+            padding-top: 30px;
+            margin-top: 30px;
+            opacity: 80%;
         }
+
+
+
 
 
 
@@ -94,18 +147,17 @@
 
 <!-- Adding Navbar -->
 <div class="container-fluid">
-    <div class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <h3>ILAYDA & ABHISHEK</h3>
-        </a>
-    </div>
-    <div class ="row no-gutters">
+
+        <div class ="row no-gutters">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+            <div class="mx-auto order-0">
+                <a class="navbar-brand mx-auto" href="#"><b>ILAYDA & ABHISHEK </b></a>
+            </div>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="../index.html"><b>HOME</b><span class="sr-only"></span></a>
                     </li>
@@ -132,31 +184,30 @@
 
 <div class="jumbotron">
 </div>
+<div class="title">
+    <h1>INTERNET SEARCH</h1></div>
+
 
 
 <div class="grid-container">
-    <div class="grid-item1"><p><b>Jerry Yang and David Filo came across the idea for Yahoo while they were still in Stanford University. The idea came across their minds when they wanted a sneaky way to use the internet to win a Stanford fantasy basketball league. They needed to quickly access data from real games, but it was very difficult to find this data in a single site. Yahoo was originally called “Jerry and David’s Directory To The World Wide Web”. It was a directory to show new internet users where to find the information they were looking for. This is because when the internet first came out, it was just a bunch of random web pages with nothing to link them. It was a crude list of websites sorted by categories and sub-categories Jerry and David’s Directory To The World Wide Web was later renamed to “YAHOO!” when millions of users flocked to their directory/website Sequoia Capital was a venture capitalist firm that was partnered with Michael Moritz, who was interested in investing in Yahoo. However, Jerry Yang and David Filo did not have a business model to make any money.</b></p></div>
-    <div class="grid-item2">
-        <div class="wrapper">
-            <div class="title1">
-                <h1>INTERNET</h1>
-            </div>
-            <div class="title2">
-                <h1>SEARCH</h1>
-            </div>
-            <div class="media">
-
-            </div>
+    <div class="grid-item">
+        <div class="footer-img">
+            <img src="https://images.unsplash.com/photo-1501163268664-3fdf329d019f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aGFuZHMlMjBjb21wdXRlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="" width="250" height="250">
         </div>
     </div>
-    <div class="grid-item3">
-        <img src="https://images.pexels.com/photos/374720/pexels-photo-374720.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Big Data" class="center" style="width: 70%; height: 70%">
-    </div>
-    <div class="grid-item4">
-        <p><b>At this moment in time, nobody else had figured out how to make money off the internet, but Yahoo would be the first; they realized that advertising was the key to making profit off internet sites because media has always been supported by advertising. Jerry Yang and David Filo were skeptical about putting up advertisements on their website because they thought it would discourage their loyal users from coming back, but since they were desperate for a business model, they had no choice. When Yahoo began posting ads on their site in late 1995, they observed that users didn’t mind the advertisements and kept scrolling; more users kept joining, (which meant more companies wanted their ads on Yahoo). Yahoo singlehandedly proved it was possible to make money off the internet, starting an online gold rush.
-        </b></p>
+    <div class="row1" style="background-color:#D8D0CD;">
+        <p><b>Jerry Yang and David Filo came across the idea for Yahoo while they were still in Stanford University. The idea came across their minds when they wanted a sneaky way to use the internet to win a Stanford fantasy basketball league. They needed to quickly access data from real games, but it was very difficult to find this data in a single site. Yahoo was originally called “Jerry and David’s Directory To The World Wide Web”. It was a directory to show new internet users where to find the information they were looking for. This is because when the internet first came out, it was just a bunch of random web pages with nothing to link them. It was a crude list of websites sorted by categories and sub-categories Jerry and David’s Directory To The World Wide Web was later renamed to “YAHOO!” when millions of users flocked to their directory/website Sequoia Capital was a venture capitalist firm that was partnered with Michael Moritz, who was interested in investing in Yahoo. However, Jerry Yang and David Filo did not have a business model to make any money.</b></p>
     </div>
 </div>
+
+
+
+
+
+<div class="info2">
+    <p><b>At this moment in time, nobody else had figured out how to make money off the internet, but Yahoo would be the first; they realized that advertising was the key to making profit off internet sites because media has always been supported by advertising. Jerry Yang and David Filo were skeptical about putting up advertisements on their website because they thought it would discourage their loyal users from coming back, but since they were desperate for a business model, they had no choice. When Yahoo began posting ads on their site in late 1995, they observed that users didn’t mind the advertisements and kept scrolling; more users kept joining, (which meant more companies wanted their ads on Yahoo). Yahoo singlehandedly proved it was possible to make money off the internet, starting an online gold rush.</b></p>
+</div>
+
 
 
 
@@ -178,17 +229,62 @@
 </div>
 
 
-<div class="grid-container2">
-    <div class="footer-content1">
-        <h2>CONTACT US</h2>
+
+<!-- Footer -->
+
+<footer class="bg-dark text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">CONTACT US</h5>
+                <p>
+                    If you have any questions or feedback about this webpage or our website's content, please feel free to use the links on the right to contact this website's creators!
+                </p>
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Ilayda Turkmen</h5>
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <i class="fab fa-github-square"></i>: <a href="https://github.com/ilaydaturkmen" class="text-dark">GitHub Repository</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-linkedin"></i>: <a href="http://www.linkedin.com/in/ilayda-turkmen-8532831b6" class="text-dark">LinkedIn</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-instagram-square"></i>: <a href="https://www.instagram.com/" class="text-dark">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-0">Abhishek Ranpura</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="fab fa-github-square"></i>: <a href="https://github.com/acr35" class="text-dark">GitHub Repository</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-linkedin"></i>: <a href="https://www.linkedin.com/in/abhishek-ranpura-1337991b7/" class="text-dark">LinkedIn</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-instagram-square"></i>: <a href="https://www.instagram.com/" class="text-dark">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="text3">
-        <h2>Ilayda Turkmen</h2>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-dark" href="#">ILAYDA & ABHISHEK</a>
     </div>
-    <div class="text4">
-        <h2>Abhishek Ranpura</h2>
-    </div>
-</div>
+</footer>
+
+
 
 
 <!-- JQuery, Popper.js, Bootstrap JS (Keep this at the end of the body)-->
