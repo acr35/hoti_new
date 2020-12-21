@@ -11,18 +11,19 @@
         body{
             background-color: #D8D3CD;
         }
-        .navbar-nav > li > .dropdown-menu { background-color: #D8D3CD; }
-        .navbar-brand{
-            color: #30475E;
+        .navbar-light .navbar-brand{
+            color: #16212b;
+            font-family: "Iowan Old Style" , sans-serif;
+            margin-top: 20px;
+
         }
         .navbar {
             background-color: transparent  !important;
             font-family: "Iowan Old Style" , sans-serif;
-            color: #30475E;
-            float: right;
+
         }
         .navbar li a{
-            color: #30475E !important;
+            color: #16212b !important;
             float: right;
         }
         .jumbotron {
@@ -105,18 +106,17 @@
 
 <!-- Adding Navbar -->
 <div class="container-fluid">
-    <div class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <h3>ILAYDA & ABHISHEK</h3>
-        </a>
-    </div>
     <div class ="row no-gutters">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+            <div class="mx-auto order-0">
+                <a class="navbar-brand mx-auto" href="#"><b>ILAYDA & ABHISHEK</b></a>
+
+            </div>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="../index.html"><b>HOME</b><span class="sr-only"></span></a>
                     </li>
@@ -195,9 +195,7 @@
                 <h5 class="text-uppercase">Ilayda Turkmen</h5>
 
                 <ul class="list-unstyled mb-0">
-                    <li>
-                        Email: <a class="text-dark">it63@njit.edu</a>
-                    </li>
+
                     <li>
                         <a href="https://github.com/ilaydaturkmen" class="text-dark">GitHub Repository</a>
                     </li>
@@ -216,9 +214,7 @@
                 <h5 class="text-uppercase mb-0">Abhishek Ranpura</h5>
 
                 <ul class="list-unstyled">
-                    <li>
-                        Email: <a class="text-dark">acr35@njit.edu</a>
-                    </li>
+
                     <li>
                         <a href="https://github.com/acr35" class="text-dark">GitHub Repository</a>
                     </li>
@@ -232,7 +228,7 @@
             </div>
         </div>
     </div>
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)" >
         © 2020 Copyright:
         <a class="text-dark" href="#">ILAYDA & ABHISHEK</a>
     </div>
