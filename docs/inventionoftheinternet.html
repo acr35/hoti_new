@@ -6,15 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="https://kit.fontawesome.com/caa5457cb2.js" crossorigin="anonymous"></script>
     <title>Invention of the Internet</title>
     <style>
         body{
             background-color: #D8D3CD;
         }
-        .navbar-nav > li > .dropdown-menu { background-color: #D8D3CD; }
-       .navbar-brand{
-           color: #30475E;
-       }
+        .navbar-light .navbar-brand{
+            color: #30475E;
+            font-family: "Iowan Old Style" , sans-serif;
+            margin-top: 20px;
+
+        }
+        footer{
+            margin-top: 150px;
+        }
+        .p-4{
+            color: #30475E;
+        }
+        .bg-dark{
+            background-color: #CDC9C4 !important;
+        }
         .navbar {
             background-color: transparent  !important;
             font-family: "Iowan Old Style" , sans-serif;
@@ -47,6 +59,7 @@
             margin: 0 auto;
             overflow: hidden;
             background-color: #D8D3CD;
+
         }
 
         .timeline:after {
@@ -55,10 +68,11 @@
             top: 0;
             left: 50%;
             margin-left: -1px;
-            border-right: 3px dashed #30475E;
+            border-right: 3px dashed #B5AEA6;
             height: 100%;
             display: block;
         }
+
 
         .timeline-row {
             padding-left: 50%;
@@ -72,7 +86,7 @@
             top: 31px;
             text-align: right;
             margin-right: 20px;
-            color: #30475E;
+            color: #B5AEA6;
             font-size: 1.5rem;
             font-family: "Iowan Old Style" , sans-serif;
 
@@ -103,11 +117,11 @@
             height: 20px;
             border-radius: 100px;
             z-index: 100;
-            background: #d5afab;
+            background: #B5AEA6;
             border: 4px #c4d2e2;
         }
         .timeline-row:nth-child(even) .timeline-content {
-            background-color: #d5afab;
+            background-color: #B5AEA6;
             margin-left: 40px;
             text-align: left;
             font-family: "Iowan Old Style" , sans-serif;
@@ -117,7 +131,7 @@
 
         .timeline-row:nth-child(even) .timeline-content:after {
             left: -39px;
-            border-right: 18px solid #d5afab;
+            border-right: 18px solid #B5AEA6;
             border-top: 10px solid transparent;
             border-bottom: 10px solid transparent;
         }
@@ -136,11 +150,11 @@
             text-align: left;
             margin-right: 0;
             margin-left: 20px;
-            color: #30475E;
+            color: #B5AEA6;
             font-family: "Iowan Old Style" , sans-serif;
         }
         .timeline-row:nth-child(odd) .timeline-content {
-            background-color: #d5afab;
+            background-color: #B5AEA6;
             margin-right: 40px;
             margin-left: 0;
             text-align: right;
@@ -149,7 +163,7 @@
         }
         .timeline-row:nth-child(odd) .timeline-content:after {
             right: -39px;
-            border-left: 18px solid #d5afab;
+            border-left: 18px solid #B5AEA6;
             border-top: 10px solid transparent;
             border-bottom: 10px solid transparent;
 
@@ -219,34 +233,6 @@
             }
         }
 
-        .grid-container2{
-            display: grid;
-            grid-template-columns: auto auto auto;
-            margin-top: 100px;
-            padding-top: 40px;
-            padding-bottom: 10px;
-            padding-left: 100px;
-            font-family: "Iowan Old Style", sans-serif;
-            color: #30475E;
-            background-color: #CDC9C4;
-        }
-        .footer-content1{
-            padding-left: 70px;
-            margin-left: 90px;
-            padding-top: 50px;
-        }
-        .text3{
-            padding-left: 100px;
-            padding-bottom: 70px;
-            margin-bottom: 30px;
-        }
-        .text4{
-            padding-right: 0;
-            margin-right: 0;
-            margin-left: 70px;
-            padding-bottom: 70px;
-            margin-bottom: 30px;
-        }
 
 
     </style>
@@ -261,18 +247,17 @@
 
 <!-- Adding Navbar -->
 <div class="container-fluid">
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <h3>ILAYDA & ABHISHEK</h3>
-        </a>
-    </nav>
+
     <div class ="row no-gutters">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+            <div class="mx-auto order-0">
+                <a class="navbar-brand mx-auto" href="#"><b>ILAYDA & ABHISHEK </b></a>
+            </div>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="../index.html"><b>HOME</b><span class="sr-only"></span></a>
                     </li>
@@ -393,17 +378,63 @@
     </div>
 
 
-<div class="grid-container2">
-    <div class="footer-content1">
-        <h2>CONTACT US</h2>
+<footer class="bg-dark text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">CONTACT US</h5>
+                <p>
+                    If you have any questions or feedback about this webpage or our website's content, please feel free to use the links on the right to contact this website's creators!
+                </p>
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Ilayda Turkmen</h5>
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <i class="fas fa-envelope-square"></i>: <a class="text-dark">it63@njit.edu</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-github-square"></i>: <a href="https://github.com/ilaydaturkmen" class="text-dark">GitHub Repository</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-linkedin"></i>: <a href="http://www.linkedin.com/in/ilayda-turkmen-8532831b6" class="text-dark">LinkedIn</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-instagram-square"></i>: <a href="https://www.instagram.com/" class="text-dark">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-0">Abhishek Ranpura</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="fas fa-envelope-square"></i>: <a class="text-dark">acr35@njit.edu</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-github-square"></i>: <a href="https://github.com/acr35" class="text-dark">GitHub Repository</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-linkedin"></i>: <a href="https://www.linkedin.com/in/abhishek-ranpura-1337991b7/" class="text-dark">LinkedIn</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-instagram-square"></i>: <a href="https://www.instagram.com/" class="text-dark">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="text3">
-        <h2>Ilayda Turkmen</h2>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-dark" href="#">ILAYDA & ABHISHEK</a>
     </div>
-    <div class="text4">
-        <h2>Abhishek Ranpura</h2>
-    </div>
-</div>
+</footer>
 
 
 </html>
