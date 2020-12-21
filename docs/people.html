@@ -13,11 +13,11 @@
         body{
             background-color: #D8D3CD;
         }
-        .navbar-nav > li > .dropdown-menu{
-            background-color: #D8D3CD !important;
-        }
-        .navbar-brand{
+        .navbar-light .navbar-brand{
             color: #30475E;
+            font-family: "Iowan Old Style" , sans-serif;
+            margin-top: 20px;
+
         }
         .navbar {
             background-color: transparent  !important;
@@ -46,7 +46,6 @@
 
         }
         .text1{
-            text-align: center;
             padding-top: 20px;
             font-family: "Iowan Old Style" , sans-serif;
             color: #30475E;
@@ -87,10 +86,12 @@
         .footer-img1{
             margin-right: 185px;
             padding-right: 155px;
+            opacity: 80%;
         }
         .footer-img{
             margin-left: 200px;
             padding-left: 150px;
+            opacity: 80%;
         }
 
         footer{
@@ -119,7 +120,7 @@
             background: #30475E;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #30475E;
+            background: #D8D3CD;
         }
 
     </style>
@@ -129,18 +130,17 @@
 
 <!-- Adding Navbar -->
 <div class="container-fluid">
-    <div class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <h3>ILAYDA & ABHISHEK</h3>
-        </a>
-    </div>
+
     <div class ="row no-gutters">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+            <div class="mx-auto order-0">
+                <a class="navbar-brand mx-auto" href="#"><b>ILAYDA & ABHISHEK</b></a>
+            </div>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="../index.html"><b>HOME</b><span class="sr-only"></span></a>
                     </li>
