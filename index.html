@@ -25,7 +25,7 @@
             float: right;
         }
         .navbar li a{
-            color: #30475E !important;
+            color: #988E83 !important;
             float: right;
         }
         .navbar {
@@ -35,11 +35,11 @@
             float: right;
         }
         .navbar li a{
-            color: #30475E !important;
+            color: #988E83 !important;
             float: right;
         }
         .title{
-            color: #30475E;
+            color: #988E83;
             font-family: "Iowan Old Style", sans-serif;
             margin-left: 20px;
         }
@@ -74,16 +74,16 @@
         }
         .btn-info{
             background-color: transparent;
-            border-color: #30475E;
-            color: #30475E;
+            border-color: #988E83;
+            color: #988E83;
             margin-top: 20px;
             margin-left: 150px;
             border-width: 3px;
         }
         .btn-info:hover{
             background-color: #424A5D;
-            color: whitesmoke;
-            border-color: #30475E;
+            color: #988E83;
+            border-color: #988E83;
             transition: 0.5s ease;
         }
         .btn{
@@ -97,10 +97,10 @@
             padding-left: 0;
             grid-column-gap: 50px;
             font-family: "Iowan Old Style", sans-serif;
-            color: #30475E;
+            color: #988E83;
         }
         .information{
-            color: #30475E;
+            color: #988E83;
             padding-top: 50px;
             margin-top: 200px;
             font-family: "Iowan Old Style", sans-serif;
@@ -110,35 +110,30 @@
             margin-left: 30px;
             width: 150px;
         }
-        .grid-container2{
-            display: grid;
-            grid-template-columns: auto auto auto;
-            margin-top: 100px;
-            padding-top: 40px;
-            padding-bottom: 10px;
-            padding-left: 100px;
-            font-family: "Iowan Old Style", sans-serif;
-            color: #30475E;
-            background-color: #CDC9C4;
+
+        ::-webkit-scrollbar {
+            width: 20px;
+        }
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #B9B4AF;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D8D3CD;
+        }
+        footer{
+            margin-top:100px;
+        }
+        .p-4{
+            color: #988E83;
+        }
+        .bg-dark{
+            background-color: #CDC9C4 !important;
         }
 
-        .footer-content1{
-            padding-left: 70px;
-            margin-left: 90px;
-            padding-top: 50px;
-        }
-        .text1{
-            padding-left: 100px;
-            padding-bottom: 70px;
-            margin-bottom: 30px;
-        }
-        .text2{
-            padding-right: 0;
-            margin-right: 0;
-            margin-left: 70px;
-            padding-bottom: 70px;
-            margin-bottom: 30px;
-        }
+
     </style>
 </head>
 <body>
@@ -268,17 +263,58 @@
     </div>
 </div>
 
-<div class="grid-container2">
-    <div class="footer-content1">
-        <h2>CONTACT US</h2>
+
+<footer class="bg-dark text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">CONTACT US</h5>
+                <p>
+                    If you have any questions or feedback about this webpage or our website's content, please feel free to use the links on the right to contact this website's creators!
+                </p>
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Ilayda Turkmen</h5>
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <i class="fab fa-github-square"></i>: <a href="https://github.com/ilaydaturkmen" class="text-dark">GitHub Repository</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-linkedin"></i>: <a href="http://www.linkedin.com/in/ilayda-turkmen-8532831b6" class="text-dark">LinkedIn</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-instagram-square"></i>: <a href="https://www.instagram.com/" class="text-dark">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-0">Abhishek Ranpura</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="fab fa-github-square"></i>: <a href="https://github.com/acr35" class="text-dark">GitHub Repository</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-linkedin"></i>: <a href="https://www.linkedin.com/in/abhishek-ranpura-1337991b7/" class="text-dark">LinkedIn</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-instagram-square"></i>: <a href="https://www.instagram.com/" class="text-dark">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="text1">
-        <h2>Ilayda Turkmen</h2>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-dark" href="#">ILAYDA & ABHISHEK</a>
     </div>
-    <div class="text2">
-        <h2>Abhishek Ranpura</h2>
-    </div>
-</div>
+</footer>
 
 
 </html>
